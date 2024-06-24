@@ -4,7 +4,7 @@ import VectorGreen2 from "../../assets/ui/VectorGreen2"
 
 const FaqSection = () => {
   return (
-    <section className=" w-full h-fit bg-[#F9FAFB] py-[60px] px-5 flex flex-col items-center justify-center">
+    <section className=" w-full h-fit bg-[#F9FAFB] py-[60px] md:pb-[100px] px-5 flex flex-col items-center justify-center">
 
       <div className=" w-[100%]  max-w-[1100px] h-fit  flex flex-col mb-[50px]  md:flex-row md:justify-between">
 
@@ -30,7 +30,7 @@ const FaqSection = () => {
       </div>
 
 
-      <div className=" w-[100%]  max-w-[1100px] h-fit sm:h-[450px] overflow-hidden sm:rounded-[30px] flex">
+      <div className=" w-[100%]  max-w-[1100px] h-fit sm:h-[450px] overflow-hidden rounded-[10px] sm:rounded-[30px] flex">
             <div className="w-full sm:w-[42%] h-full  bg-[#101010] flex flex-col sm:items-center justify-center relative overflow-hidden">
 
               <div className="text-white h-fit w-[100%] max-w-[320px] sm:max-w-[350px] py-7 pl-5 sm:pr-0 relative z-30 ">
