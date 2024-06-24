@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Merchant";
+    font-display: swap;
+    src: url(/merchant-fonts/Merchant-SemiBold.woff2) format("woff2");
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.play {
+  background-color: #ffffff10;
+  backdrop-filter: blur(4px);
+}
+.pisa {
+  background-color: #d5d5d56f;
+  backdrop-filter: blur(4px);
+}
+
+.sales-route a:hover svg {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.varyf {
+  animation: 30s slide linear infinite;
+}
+
+.vec {
+  transition: width 800ms ease;
+}
+
+@media (max-width: 804px) {
+  .desc:hover .vec {
+    width: 930px;
+  }
+}
+.veet svg {
+  height: 30px;
+}
+
+.veet::before {
+  content: url(../images/dot.svg);
+  height: 20px;
+}
