@@ -4,7 +4,7 @@ import LogoCarousel from "../../components/LogoCarousel";
 
 const DescSection = () => {
   return (
-    <div className=" w-full h-fit py-[50px] pb-[100px]  bg-[#FFF2EF] flex flex-col items-center">
+    <div className=" w-full h-fit py-[50px] pb-[80px]  bg-[#FFF2EF] flex flex-col items-center">
       <div className=" xs:w-[420px] h-[200px] sm:h-[300px] px-2 text-center flex flex-col justify-center">
         <span className=" text-[11px] xs:text-[13px] sm:text-[15px] mt-5 font-semibold text-ginger-red tracking-wider uppercase  ">
           built for you

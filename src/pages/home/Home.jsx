@@ -5,7 +5,7 @@ import SeeHowSection from "./see-how-routes/SeeHowSection";
 
 const Home = () => {
   return (
-    <div className=" min-w-[344px]">
+    <div>
       <HeroSection />
       <DescSection/>
       <SeeHowSection/>

@@ -4,11 +4,11 @@ import VectorGreen2 from "../../assets/ui/VectorGreen2"
 
 const FaqSection = () => {
   return (
-    <section className=" w-full h-fit bg-[#F9FAFB] py-[60px] md:pb-[100px] px-5 flex flex-col items-center justify-center">
+    <section className=" w-full h-fit bg-[#F9FAFB] md:py-[60px] pb-[50px] mpb-[100px] px-5 flex flex-col items-center justify-center">
 
       <div className=" w-[100%]  max-w-[1100px] h-fit  flex flex-col mb-[50px]  md:flex-row md:justify-between">
 
-        <div className=" w-[320px] lg:w-[350px] py-5 mb-5 md:h-[300px] ">
+        <div className=" w-[320px] lg:w-[350px] py-5 pt-[40px] md:pt-[20px] mb-5 md:h-[300px] ">
             <h1 className=" text-[30px] lg:text-[36px] font-merchant leading-[1.2]">
             Frequently asked questions
             </h1>

@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom"
 
 const Layout = () => {
   return (
-    <div>
+    <div className="min-w-[344px] max-w-[1600px] mx-auto">
       <Nav/>
             <Outlet/>
             <Footer/>
