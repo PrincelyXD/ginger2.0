@@ -9,7 +9,7 @@ export default {
       md: "804px",
       lg: "1040px",
       xl: "1440px",
-    },
+    }, 
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       openSans: ["Open Sans", "sans-serif"],
