@@ -2,7 +2,7 @@ import Accordion from "../../components/Accordion";
 import PillButton from "../../assets/ui/PillButton";
 import VectorGreen2 from "../../assets/ui/VectorGreen2"
 
-const FaqSection = () => {
+const FaqSection = ({toggleModal}) => {
   return (
     <section className=" w-full h-fit bg-[#F9FAFB] md:py-[60px] pb-[50px] mpb-[100px] px-5 flex flex-col items-center justify-center">
 
@@ -34,14 +34,14 @@ const FaqSection = () => {
             <div className="w-full sm:w-[42%] h-full  bg-[#101010] flex flex-col sm:items-center justify-center relative overflow-hidden">
 
               <div className="text-white h-fit w-[100%] max-w-[320px] sm:max-w-[350px] py-7 pl-5 sm:pr-0 relative z-30 ">
-                <h2 className=" text-[24px] sm:text-[30px] lg:text-[32px] font-merchant mb-4 pr-4 leading-[1.2]">
+                <h2 className=" text-[27px] sm:text-[30px] lg:text-[32px] font-merchant mb-4 pr-4 leading-[1.2]">
               Connect with verified buyers or sellers on the platform
               </h2>
 
-              <p className=" text-[12px] sm:text-[14px]  mb-[30px]">
+              <p className=" text-[14px] sm:text-[14px]  mb-[30px]">
               Whether you're a seller showcasing products or a buyer seeking quality items, our curation-driven process gets you started instantly.
               </p>
-              <PillButton text="Join Waitlist" px="px-6"  textSize='text-[12px]'/>
+              <PillButton toggleModal={toggleModal} text="Join Waitlist" px="px-6"  textSize='text-[12px]'/>
               </div>
               <VectorGreen2 color="red"/>
             </div>

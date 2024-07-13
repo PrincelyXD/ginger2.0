@@ -1,7 +1,7 @@
 import PillButton from '../../assets/ui/PillButton'
 import PlayBtn from "../../assets/ui/PlayBtn";
 
-const HeroSection = () => {
+const HeroSection = ({toggleModal}) => {
   return (
     <div className="w-full h-[700px] sm:h-[755px] flex items-center justify-center hero-cont mt-[-100px]  bg-hero-background  bg-center bg-cover">
     <div className=" w-full sm:w-[600px] h-fit mt-[60px] xs:mt-[40px]  text-white  text-center flex flex-col items-center justify-center ">
@@ -21,7 +21,7 @@ const HeroSection = () => {
         transactions.
       </p>
       
-      <PillButton text='Join Waitlist' px='px-8'/>
+      <PillButton toggleModal={toggleModal} text='Join Waitlist' px='px-8'/>
     </div>
   </div>
   )

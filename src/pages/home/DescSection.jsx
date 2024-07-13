@@ -2,7 +2,7 @@ import ArrowLink from "../../assets/ui/ArrowLink";
 import VectorGreen from "../../assets/ui/VectorGreen";
 import LogoCarousel from "../../components/LogoCarousel";
 
-const DescSection = () => {
+const DescSection = ({toggleModal}) => {
   return (
     <div className=" w-full h-fit py-[50px] pb-[80px]  bg-[#FFF2EF] flex flex-col items-center">
       <div className=" xs:w-[420px] h-[200px] sm:h-[300px] px-2 text-center flex flex-col justify-center">
@@ -38,7 +38,7 @@ const DescSection = () => {
               find the best beauty and fashion products from trusted wholesalers
               around the world.
             </p>
-            <ArrowLink color='#699444' />
+            <ArrowLink toggleModal={toggleModal} color='#699444' />
 
             <VectorGreen color='#699444' />
           </div>
@@ -69,7 +69,7 @@ const DescSection = () => {
               products to a network of verified buyers looking for quality
               items.
             </p>
-            <ArrowLink color='#113264' />
+            <ArrowLink toggleModal={toggleModal} color='#113264' />
             <VectorGreen color='#113264' />
           </div>
 

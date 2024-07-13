@@ -4,15 +4,16 @@ import PillButton from "../assets/ui/PillButton";
 import { Rotate as Hamburger } from 'hamburger-react'
 import HamburgerMenu from "./HamburgerMenu";
 
-const Nav = () => {
+const Nav = ({toggleModal}) => {
+
   return (
     <div className="h-[100px] w-100% bg-black   flex items-center justify-center relative">
 
       <nav className="h-[100px] w-[87%]  flex font-openSans justify-between items-center ">
         <Logo />
 
-        <div className=" text-white relative z-[999] hidden md:flex py-2 lg:px-4 backdrop-brightness-[.5] backdrop:blur-[0.5] rounded-md">
-
+        <div className=" text-white relative z-[50] hidden md:flex py-2 lg:px-4 backdrop-brightness-[.5] backdrop:blur-[0.5] rounded-md">
+            
           <Link className=" relative z-20 text-[13px] lg:text-[16px] mx-4  pr-4 py-2 border-r-[1.2px]  border-[#5b5b5b82]">Be a Supplier</Link>
           <Link className=" relative z-20 text-[13px] lg:text-[16px] mr-4 pr-4  py-2 border-r-[1.2px]  border-[#5b5b5b82]">Categories</Link>
           <Link className=" relative z-20 text-[13px] lg:text-[16px] mr-4 pr-4  py-2 border-r-[1.2px]  border-[#5b5b5b82]">About Us</Link>
@@ -26,12 +27,14 @@ const Nav = () => {
         
         <div className=" hidden md:flex">
           
-          <PillButton text="Join Waitlist" px="px-6" />
+          <PillButton toggleModal={toggleModal} text="Join Waitlist" px="px-6" />
         </div>
 
         <div className=" block md:hidden">
           <HamburgerMenu/>
         </div>
+
+       
       </nav>
     </div>
   );

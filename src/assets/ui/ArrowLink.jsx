@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ArrowLink = ({color}) => {
+const ArrowLink = ({color, toggleModal}) => {
   return (
     <div className="sales-route relative z-10">
-      <Link className="w-[180px] flex no-underline items-center">
+      <Link onClick={toggleModal} className="w-[180px] flex no-underline items-center">
         <svg
           width="46"
           height="46"

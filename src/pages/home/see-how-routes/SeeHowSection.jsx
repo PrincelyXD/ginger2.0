@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import BuiltForYou from "./BuiltForYou";
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 
-const SeeHowSection = () => {
+const SeeHowSection = ({toggleModal}) => {
+
+const modalOpen = null
+
   const activeStyle1 = {
     color: "#FF4623",
     backgroundColor: "#ff482329",
@@ -65,7 +69,7 @@ const SeeHowSection = () => {
           </NavLink>
         </div>
 
-        <Outlet />
+        <Outlet context={[modalOpen, toggleModal]}/>
       </div>
     </section>
   );

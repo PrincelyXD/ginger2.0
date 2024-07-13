@@ -35,7 +35,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className=" w-[100%] max-w-[350px] text-white flex justify-between mx-0 md:mx-2 mb-8 md:mb-0  ">
+          <div className=" w-[100%] max-w-[350px] text-white flex justify-between mx-0 md:mx-2 mb-8 md:mb-0 ">
             <ul>
               <p className=" text-[16px] font-semibold text-[#98A2B3] mb-3">
                 Product

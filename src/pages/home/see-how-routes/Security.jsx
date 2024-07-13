@@ -1,8 +1,11 @@
 
 import ArrowLink from "../../../assets/ui/ArrowLink";
 import VectorGreen2 from "../../../assets/ui/VectorGreen2";
+import { useOutletContext } from "react-router-dom";
 
 const Security = () => {
+  const [modalOpen, toggleModal] = useOutletContext()
+
   return (
     <section className=" w-[100%] h-fit xs:h-[480px]  md:h-[520px]  rounded-[30px] flex flex-col-reverse xs:flex-row overflow-hidden transition-all duration-[0.3s] shadow-[-4px_4px_24px_0px_#00000024]">
       <div className=" xs:w-[65%] md:w-[60%] h-fit xs:h-full py-[30px]   px-[30px]  flex flex-col justify-between relative overflow-hidden transition-all duration-[0.3s]  ">
@@ -18,7 +21,7 @@ const Security = () => {
             orders, manage your purchases, and receive products promptly, all
             within a trusted and efficient marketplace.{" "}
           </p>
-          <ArrowLink color="#699444" />
+          <ArrowLink toggleModal={toggleModal} color="#699444" />
         </div>
 
         <VectorGreen2 color="#699444" />

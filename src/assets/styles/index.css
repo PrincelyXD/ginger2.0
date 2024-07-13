@@ -15,6 +15,25 @@
   box-sizing: border-box;
 }
 
+.noScroll{
+  overflow: hidden;
+}
+
+.hamsvg {
+  animation: rotate 50s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(400deg);
+  }
+}
+
+
+
 .play {
   background-color: #ffffff10;
   backdrop-filter: blur(4px);
