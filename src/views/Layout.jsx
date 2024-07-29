@@ -6,10 +6,14 @@ import { useState } from "react";
 
 const Layout = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const frame = document.querySelector("#body");
 
   function toggleModal() {
     setModalOpen(!modalOpen);
   }
+
+  modalOpen ? frame.classList.add("stopPageScroll") : frame.classList.remove("stopPageScroll");
+
   return (
     <div className="min-w-[344px]  max-w-[1600px] mx-auto relative">
       {modalOpen && <Modal toggleModal={toggleModal} />}

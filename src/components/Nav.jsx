@@ -7,7 +7,7 @@ import HamburgerMenu from "./HamburgerMenu";
 const Nav = ({toggleModal}) => {
 
   return (
-    <div className="h-[100px] w-100% bg-black   flex items-center justify-center relative">
+    <div className="h-[100px] w-100%   flex items-center justify-center relative z-10">
 
       <nav className="h-[100px] w-[87%]  flex font-openSans justify-between items-center ">
         <Logo />
