@@ -29,7 +29,7 @@ const modalOpen = null
 
   return (
     <section className="w-full h-fit pb-[80px] flex flex-col justify-start items-center px-[20px]">
-      <div className="w-[100%] max-w-[1100px] h-fit  mb-[50px]  sm:h-[200px] flex flex-col sm:flex-row justify-between sm:items-end">
+      <div className="w-[100%] max-w-[1100px] h-fit  mt-[40px]  mb-[80px]  sm:h-[200px] flex flex-col sm:flex-row justify-between sm:items-end">
         <div className="w-[100%]  max-w-[400px] mb-[20px] sm:mb-[0]">
           <h1 className=" text-[35px] md:text-[40px] pt-[40px] font-merchant leading-[1.2]">
             See how Ginger helps you source quality products faster
@@ -44,7 +44,7 @@ const modalOpen = null
         </div>
       </div>
 
-      <div className="w-[100%] max-w-[1100px] sm:h-fit  flex flex-col  sm:flex-row ">
+      <div className="w-[100%] max-w-[1100px] sm:h-fit flex  flex-col  sm:flex-row ">
 
         <div className=" h-fit flex items-end">
 

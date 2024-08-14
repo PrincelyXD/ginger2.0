@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Accordion = ({ question, answer }) => {
+const Accordion = ({ question, answer, listItems, answer2}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ const Accordion = ({ question, answer }) => {
         
         <h1 className=" w-full text-[16px] sm:text-[18px] text-[#0B111B] lg:text-[20px] font-merchant flex">
           {question}
-        </h1>
+        </h1> 
        
 
         {isOpen ? (
@@ -61,13 +61,17 @@ const Accordion = ({ question, answer }) => {
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         } `}
       >
-        <p
-          className={`overflow-hidden text-[13px]  lg:text-[14px] pr-[50px]  sm:pr-[140px] transition-all duration-[600ms] ease-in-out ${
+        <div
+          className={`overflow-hidden text-[13px]   pr-[50px]  sm:pr-[140px] transition-all duration-[600ms] ease-in-out ${
             isOpen ? " pt-[10px]" : " pt-0"
           }`}
         >
+          
           {answer}
-        </p>
+         {listItems && listItems.map((item, id)=> <ul className=" list-disc pl-6 my-2" key={id}><li>{item}</li></ul>)}
+       {answer2}
+            
+        </div>
       </div>
     </div>
   );

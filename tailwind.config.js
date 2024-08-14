@@ -45,6 +45,7 @@ export default {
         "slide2":  "url('/src/pages/home/see-how-routes/images/slide2.png')",
         "slide3":  "url('/src/pages/home/see-how-routes/images/slide3.png')",
         "faq-img":  "url('/src/assets/images/faq-img.png')",
+        "footer-img":  "url('/src/components/footer/images/footer-img.png')",
         "modal-img": "url('/src/assets/images/modal-img.png')"
 
       },

@@ -1,10 +1,6 @@
 import React from "react";
-import img1 from "./images/rectangle1.jpg";
-import img2 from "./images/rectangle2.jpg";
-import img3 from "./images/rectangle3.jpg";
-import img4 from "./images/rectangle4.jpg";
-import img5 from "./images/rectangle5.jpg";
-import img6 from "./images/rectangle6.jpg";
+
+
 import InstagramPill from "../../assets/ui/InstagramPill";
 import Logo from "../../assets/ui/Logo";
 import { Link } from "react-router-dom";
@@ -13,13 +9,8 @@ import SocialIcons from "../../assets/ui/SocialIcons";
 const Footer = () => {
   return (
     <footer>
-      <div className=" w-full h-[170px] bg-slate-500 flex overflow-hidden relative">
-        <img className=" h-[200px]" src={img1} alt="" />
-        <img className=" h-[200px]" src={img2} alt="" />
-        <img className=" h-[200px]" src={img3} alt="" />
-        <img className=" h-[200px]" src={img4} alt="" />
-        <img className=" h-[200px]" src={img5} alt="" />
-        <img className=" h-[200px]" src={img6} alt="" />
+      <div className=" w-full h-[170px] bg-footer-img  bg-cover flex overflow-hidden relative">
+      
 
         <div className=" h-full w-full bg-black absolute opacity-[0.5]"> </div>
 

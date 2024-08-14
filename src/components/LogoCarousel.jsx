@@ -10,7 +10,7 @@ const LogoCarousel = () => {
   return (
     <div className=" w-full md:w-[98%] max-w-[1050px] h-[100px] md:h-[150px] mt-[50px] bg-[#101010]  md:rounded-full flex flex-col items-center justify-center">
       <p className=" text-[13px] md:text-[16px] uppercase text-white font-medium tracking-wide md:mt-[-20px] ]">
-        backed by top brands
+        backed by top manufacturers
       </p>
       <div className=" hidden w-[80%] md:flex  items-center justify-between logo-carousel mt-[20px]">
         <img className=" h-[30px]" src={logo1} alt="" />

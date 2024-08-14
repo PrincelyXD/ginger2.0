@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const InstagramPill = () => {
   return (
+    
     <div className=" w-full h-full absolute flex items-center justify-center ">
-      <Link className="flex  py-4 px-5 bg-red-300 rounded-full pisa">
+      <Link  to='https://www.instagram.com/gingermeafrica/' target="blank" className="flex  py-4 px-5 bg-red-300 rounded-full pisa">
         <svg
           width="18"
           height="18"
