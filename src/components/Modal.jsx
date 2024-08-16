@@ -2,6 +2,7 @@ import { useState } from "react";
 import EmptyCheckSvg from "../assets/svgs/EmptyCheckSvg";
 import CheckedSvg from "../assets/svgs/CheckedSvg";
 import PillButton from "../assets/ui/PillButton";
+import { motion } from "framer-motion";
 
 const Modal = ({ toggleModal }) => {
   const [isBuyer, setIsBuyer] = useState(true);
@@ -19,7 +20,11 @@ const Modal = ({ toggleModal }) => {
       onClick={toggleModal}
       className=" w-[100%] max-w-[inherit] h-full bg-[#000000b0] fixed z-[999] flex justify-center items-center"
     >
-      <div
+      <motion.div
+        initial={{ opacity: 0, transform: "rotate(-360deg)" }}
+        whileInView={{ opacity: 1, transform: "rotate(0deg)" }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0 }}
         onClick={wand}
         className="w-[95%] md:w-[950px] h-[95vh] md:h-[610px]  bg-white flex flex-col md:flex-row rounded-[25px] md:overflow-hidden relative"
       >
@@ -126,16 +131,8 @@ const Modal = ({ toggleModal }) => {
           </div>
         </section>
 
-        <div className=" hidden md:block w-[50%] bg-modal-img bg-center bg-cover relative">
-          {/* <button onClick={toggleModal} className=" absolute right-4 top-4 hover:scale-[1.2] transition-all ease-linear ">
-            <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="15" cy="15" r="15" fill="#F8F9FA"/>
-<path d="M19.3752 10.6249L10.6252 19.3749M10.6252 10.6249L19.3752 19.3749" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
-
-            </button> */}
-        </div>
-      </div>
+        <div className=" hidden md:block w-[50%] bg-modal-img bg-center bg-cover relative"></div>
+      </motion.div>
     </div>
   );
 };

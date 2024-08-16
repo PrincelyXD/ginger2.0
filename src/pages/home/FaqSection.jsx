@@ -1,7 +1,7 @@
 import Accordion from "../../components/Accordion";
 import PillButton from "../../assets/ui/PillButton";
 import VectorGreen2 from "../../assets/ui/VectorGreen2"
-
+import { motion, spring } from "framer-motion";
 const FaqSection = ({toggleModal}) => {
   const productsOnGinger = [
     "Hair Care: Shampoos, conditioners, treatments, and styling products.",
@@ -36,11 +36,16 @@ const FaqSection = ({toggleModal}) => {
 "Find the order you’d like to cancel and select Cancel Order"
   ]
   return (
-    <section className=" w-full h-fit bg-[#F9FAFB] md:py-[60px] pb-[50px] mpb-[100px] px-5 flex flex-col items-center justify-center">
+    <section className=" w-full h-fit bg-[#F9FAFB] md:py-[60px] pb-[50px] mpb-[100px] px-3 md:px-5 flex flex-col items-center justify-center">
 
       <div className=" w-[100%]  max-w-[1100px] h-fit  flex flex-col mb-[50px]  md:flex-row md:justify-between">
 
-        <div className=" w-[320px] lg:w-[350px] py-5 pt-[40px] md:pt-[20px] mb-5 md:h-[300px] ">
+        <motion.div
+         initial={{ opacity: 0, transform: "translateY(20px)" }}
+         whileInView={{ opacity: 1, transform: "translateY(3px)" }}
+         viewport={{ once: true }}
+         transition={{ duration: 0.4, delay: 0.2 }}
+        className=" w-[320px] lg:w-[350px] py-5 px-2 pt-[40px] md:pt-[20px] mb-5 md:h-[300px] ">
             <h1 className=" text-[30px] lg:text-[36px] font-merchant leading-[1.2]">
             Frequently asked questions
             </h1>
@@ -48,10 +53,15 @@ const FaqSection = ({toggleModal}) => {
             <p className=" text-[14px] text-[#262626] pt-0 ">
             Let’s help you get all the answers you need. If you’d prefer to speak with us directly, do send an email to <a className=" font-semibold italic" href="mailto:support@gingerme.io">support@gingerme.io</a>.
             </p>
-        </div>
+        </motion.div>
 
 
-        <div className=" w-full sm:w-[580px] h-fit sm:p-4 bg-[#ffff] self-center  md:self-start rounded-xl ">
+        <motion.div 
+         initial={{ opacity: 0, transform: "translateY(20px)" }}
+         whileInView={{ opacity: 1, transform: "translateY(3px)" }}
+         viewport={{ once: true }}
+         transition={{  duration: 0.4, delay: 0.2 }}
+        className=" w-full sm:w-[580px] h-fit sm:p-4 bg-[#ffff] self-center  md:self-start rounded-xl ">
             <Accordion question='How do I sign up on Ginger?' answer="Thank you so much for your interest in joining Ginger! To sign up as a buyer, please create an account here. It is important that when you sign-up you provide accurate information. The more information you provide during sign-up the less likely there are to be delays with receiving orders. Thank you for being thorough!"/>
             <Accordion question='What type of products can I find on Ginger?' answer="On Ginger, you can find a wide range of high-quality products tailored to the beauty and personal care industry. Our marketplace offers:" listItems={productsOnGinger} answer2="Whether you are a beauty professional, retail business, pharmacy, salon owner - Ginger has everything you need to support and grow your business with ease."/>
             <Accordion question='Who is considered a supplier on Ginger?' answer="A supplier on Ginger is any verified manufacturer, wholesaler, or brand that provides beauty, personal care, jewelry, and fashion products to businesses. Suppliers are thoroughly vetted to ensure they meet our quality standards and can offer reliable and high-quality inventory to our buyers."/>
@@ -62,7 +72,7 @@ const FaqSection = ({toggleModal}) => {
              <Accordion question='How do I become a verified supplier on Ginger?' answer="To become a verified supplier on Ginger, follow these steps:"listItems={verification}answer2="If you have any questions or need assistance during the verification process, please contact our customer support team."/>
             <Accordion question="How can I cancel an order?" answer="You can cancel an order on Ginger as long as the supplier hasn’t started processing it yet. To cancel an order:" listItems={cancelOrder} answer2="If the supplier has started processing your order, click Request Cancellation. The supplier will then be able to accept or decline your request. You can’t cancel an order once it’s been shipped."/>
           <Accordion question="How do I contact a supplier on Ginger?" answer="The best way to get in touch with a supplier on Ginger is through our chat messaging platform. Chat is available on all Ginger platforms, including on our desktop website and our mobile app. We encourage you to contact the supplier directly for specific questions about their products or about the status of an order. All the brands on Ginger produce and ship orders to you directly, so they’re the best point of contact to get those questions answered"/>
-        </div>
+        </motion.div>
       </div>
 
 
@@ -70,13 +80,23 @@ const FaqSection = ({toggleModal}) => {
             <div className="w-full sm:w-[42%] h-full  bg-[#101010] flex flex-col sm:items-center justify-center relative overflow-hidden">
 
               <div className="text-white h-fit w-[100%] max-w-[320px] sm:max-w-[350px] py-7 pl-5 sm:pr-0 relative z-30 ">
-                <h2 className=" text-[27px] sm:text-[30px] lg:text-[32px] font-merchant mb-4 pr-4 leading-[1.2]">
+                <motion.h2
+                 initial={{ opacity: 0, transform: "translateX(-20px)" }}
+            whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+                className=" text-[27px] sm:text-[30px] lg:text-[32px] font-merchant mb-4 pr-4 leading-[1.2]">
               Connect with verified buyers or sellers on the platform
-              </h2>
+              </motion.h2>
 
-              <p className=" text-[14px] sm:text-[14px]  mb-[30px]">
+              <motion.p
+               initial={{ opacity: 0, transform: "translateX(-20px)" }}
+            whileInView={{ opacity: 1, transform: "translateX(0px)" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.2 }}
+              className=" text-[14px] sm:text-[14px]  mb-[30px]">
               Whether you're a seller showcasing products or a buyer seeking quality items, our curation-driven process gets you started instantly.
-              </p>
+              </motion.p>
               <PillButton toggleModal={toggleModal} text="Join Waitlist" px="px-6"  textSize='text-[12px]'/>
               </div>
               <VectorGreen2 color="red"/>

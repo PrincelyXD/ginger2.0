@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import SeeHowSection from "./see-how-routes/SeeHowSection";
 import { useOutletContext } from "react-router-dom";
 
+
 const Home = () => {
   const [modalOpen, toggleModal] = useOutletContext();
 
@@ -15,6 +16,6 @@ const Home = () => {
       <FaqSection toggleModal={toggleModal} />
     </div>
   );
-};
+}; 
 
 export default Home;

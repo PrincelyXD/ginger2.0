@@ -10,6 +10,7 @@ const Nav = ({toggleModal}) => {
     <div className="h-[100px] w-100%   flex items-center justify-center relative z-10">
 
       <nav className="h-[100px] w-[87%]  flex font-openSans justify-between items-center ">
+        
         <Logo />
 
         <div className=" text-white relative z-[50] hidden md:flex py-2 lg:px-4 backdrop-brightness-[.5] backdrop:blur-[0.5] rounded-md">
