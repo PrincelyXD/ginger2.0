@@ -23,7 +23,7 @@ const Footer = () => {
          initial={{ opacity: 0, transform: "translateY(40px)" }}
          whileInView={{ opacity: 1, transform: "translateY(0px)" }}
          viewport={{ once: true }}
-         transition={{ duration: 0.5, delay: 0.3 }}
+         transition={{ duration: 0.5, delay: 0.1 }}
         className="footer-wrapper w-full h-full max-w-[1200px] py-[60px] md:py-[40px]  flex flex-col md:flex-row justify-between  ">
           <div className="w-full max-w-[250px] mb-8 md:mb-0 text-white text-[14px]   ">
             <Logo />
